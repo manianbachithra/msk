@@ -1,0 +1,170 @@
+body {
+	background-color:F0F0F0;
+}
+.clear{
+	clear:both;
+}
+.menunav{
+	padding:12px;
+	line-height:20px;
+	color:#fff;
+	background-color:#157CA0;
+}
+.menunav p{
+	margin:0px;
+    font-weight: 600;
+    font-size:14px;
+    letter-spacing:0.4px;
+}
+.loginform{
+	background-color:#fff;
+    padding-top:25px;
+    
+}
+.login-navbar {
+	width:100%;
+	background-color:#f7f7f7;
+	border-top:1px solid #f0f0f0;
+	border-bottom:1px solid #f0f0f0;
+	font-size: 13px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 15px 0;
+}
+.top-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pull-right {
+    float: right!important;
+}
+.top-info li {
+    float: left;
+    margin-left: 10px;
+    font-weight: 600;
+    list-style: none;
+}
+.top-info i {
+    color: #008dde;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.top-info2{
+	margin-top: 35px;
+    float: right;
+    padding-right: 20px;
+}
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+
+fieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+
+#login {
+    padding-left: 30px;
+    border-right: 1px solid #f0f0f0
+}
+
+form fieldset input[type="text"], input[type="password"], input[type="email"] {
+	background: #e5e5e5;
+	border: none;
+	border-radius: 3px;
+	color: #5a5656;
+	font-family: inherit;
+	font-size: 14px;
+	height: 40px;
+	outline: none;
+	padding: 0px 10px;
+	width: 300px;
+  -webkit-appearance:none;
+}
+
+form fieldset input[type="submit"] {
+	border: none;
+	border-radius: 3px;
+	color: #f4f4f4;
+	cursor: pointer;
+	font-family: inherit;
+	height: 50px;
+	width: 300px;
+  -webkit-appearance:none;
+}
+
+form fieldset a {
+	color: #5a5656;
+	font-size: 10px;
+}
+
+form fieldset a:hover { text-decoration: underline; }
+
+
+/* -----Not a Member */
+.not-member{
+	padding-top:20px;
+	padding-left:20px;
+} 
+.not-member h3{
+	color:#363636;
+	font-size:17px;
+}
+.join-intro{
+	font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    margin: 0 0 10px;
+}
+.crate_btn{
+    background-color: #008dde;
+    border: none;
+    border-radius: 3px;
+    color: #f4f4f4;
+    cursor: pointer;
+    font-family: inherit;
+    height: 40px;
+    text-transform: uppercase;
+    width: 240px;
+    margin-top: 20px;
+    -webkit-appearance: none;
+}

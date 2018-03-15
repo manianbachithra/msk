@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+<<<<<<< HEAD:target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+Built-By: vengatesh
+Build-Jdk: 1.8.0_66
+=======
+Built-By: FBTadmin
+Build-Jdk: 1.8.0_101
+>>>>>>> c03353efdd56375a8af4c12e0a951903b01f8f11:src/main/webapp/META-INF/MANIFEST.MF
+Created-By: Maven Integration for Eclipse
+

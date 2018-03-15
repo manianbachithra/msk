@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/TalentexES/!svn/ver/129/TalentexES_version1.0/Talentex-Assessment/src/main/webapp/WEB-INF/spring/resource
+END
+servlet-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/TalentexES/!svn/ver/93/TalentexES_version1.0/Talentex-Assessment/src/main/webapp/WEB-INF/spring/resource/servlet-context.xml
+END
+applicationContext-mail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/TalentexES/!svn/ver/129/TalentexES_version1.0/Talentex-Assessment/src/main/webapp/WEB-INF/spring/resource/applicationContext-mail.xml
+END
+applicationContext-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/TalentexES/!svn/ver/93/TalentexES_version1.0/Talentex-Assessment/src/main/webapp/WEB-INF/spring/resource/applicationContext-dao.xml
+END
+applicationContext-init.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/TalentexES/!svn/ver/93/TalentexES_version1.0/Talentex-Assessment/src/main/webapp/WEB-INF/spring/resource/applicationContext-init.xml
+END

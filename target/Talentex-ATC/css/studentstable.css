@@ -1,0 +1,418 @@
+
+/*--------Start Datatables-------*/
+.demo {margin:4em auto}
+
+
+// Quickly SCSS'ed
+// Handful of questionable important flags
+
+.dataTables_length {
+  label {float:left;text-align:left}
+  select {width:75px}
+}
+.dataTables_filter {
+  label {float:right}
+}
+.dataTables_info {padding-top:26px}
+.dataTables_paginate {float:right;margin:0}
+
+table {
+  &.table {
+    clear:both;
+    margin-bottom:6px !important;
+    max-width:none !important;
+    thead {
+      .sorting,
+      .sorting_asc,
+      .sorting_desc,
+      .sorting_asc_disabled,
+      .sorting_desc_disabled {cursor:pointer;*cursor:hand}
+      .sorting { background: url('../images/sort_both.png') no-repeat center right; }
+      .sorting_asc { background: url('../images/sort_asc.png') no-repeat center right; }
+      .sorting_desc { background: url('../images/sort_desc.png') no-repeat center right; }
+      .sorting_asc_disabled { background: url('../images/sort_asc_disabled.png') no-repeat center right; }
+      .sorting_desc_disabled { background: url('../images/sort_desc_disabled.png') no-repeat center right; }
+    }
+  }
+  &.dataTable {
+    th:active {outline:none}
+  }
+}
+
+/* Scrolling */
+.dataTables_scrollHead table {
+  margin-bottom: 0 !important;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  thead {
+    tr:last-child {
+      th:first-child,td:first-child {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+  }
+}
+.dataTables_scrollBody {
+  table {
+    border-top: none;
+    margin-bottom: 0 !important;
+    tbody tr:first-child {
+      th, td {border-top:none}
+    }
+  }
+}
+.dataTables_scrollFoot table {
+  border-top: none;
+}
+
+
+/*
+ * TableTools styles
+ */
+
+.table tbody tr {
+  &.active {
+    td,th {background-color:#08C;color:white}
+    &:hover {
+      td,th {background-color: #0075b0 !important}
+    }
+  }
+}
+.table-striped tbody tr {
+  &.active:nth-child(odd) {
+    td,th {background-color: #017ebc;}
+  }
+}
+
+table.DTTT_selectable tbody tr {cursor: pointer;*cursor: hand}
+
+.DTTT {
+  .btn {
+    color: #333 !important;
+    font-size: 12px;
+    &:hover {text-decoration: none !important;}
+  }
+}
+
+ul.DTTT_dropdown.dropdown-menu li:hover a {
+  background-color: #0088cc;
+  color: white !important;
+}
+
+/* TableTools information display */
+
+.DTTT_print_info {
+  &.modal {
+    height: 150px;
+    margin-top: -75px;
+    text-align: center;
+  }
+  h6 {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 28px;
+    margin: 1em;
+  }
+  p {font-size:14px;line-height:20px}
+}
+
+/*
+ * FixedColumns styles
+ */
+div.DTFC_LeftHeadWrapper table,
+div.DTFC_LeftFootWrapper table,
+table.DTFC_Cloned tr.even {
+  background-color: white;
+}
+
+div.DTFC_LeftHeadWrapper table {
+  margin-bottom: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+div.DTFC_LeftHeadWrapper table thead tr:last-child th:first-child,
+div.DTFC_LeftHeadWrapper table thead tr:last-child td:first-child {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+div.DTFC_LeftBodyWrapper table {
+  border-top: none;
+  margin-bottom: 0 !important;
+}
+
+div.DTFC_LeftBodyWrapper tbody tr:first-child th,
+div.DTFC_LeftBodyWrapper tbody tr:first-child td {
+  border-top: none;
+}
+
+div.DTFC_LeftFootWrapper table {
+  border-top: none;
+}
+/*--------End Datatables-------*/
+
+
+/*--------Start Calender-------*/
+@charset "UTF-8";
+/* Dirty ! Dirty ! Dirty ! (Code smell according @_flexbox) */
+
+
+time {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+}
+time em {
+  display: block;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}
+
+[role="main"] {
+  overflow: hidden;
+  padding: 15px;
+  background: white;
+  font-family: "Helvetica";
+}
+
+section ul {
+  list-style-type: none;
+}
+section li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  zoom: 1;
+  *display: inline;
+}
+
+.m-box--weeks {
+  color: #e66b6b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.m-box--date {
+  color: #555;
+  font-size: 14px;
+}
+
+.l-date--passed {
+  color: #bababa;
+}
+
+.eventTip {
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  top: -125%;
+  margin-left: -75px;
+  background: #249991;
+  color: white;
+}
+.eventTip:before {
+  content: "▾";
+  position: absolute;
+  font-size: 25px;
+  color: #249991;
+  bottom: -19px;
+  left: 46%;
+}
+/*--------END Calender-------*/
+
+    
+
+/* -------------Start OFF CANVAS----------------- */
+
+a.nav-expander {
+  background: none repeat scroll 0 0 #000000;
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  transition: right 0.3s ease-in-out 0s;
+  width: 130px;
+  z-index: 12;
+ 
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+ 
+}
+ 
+a.nav-expander:hover {
+  cursor: pointer;
+}
+ 
+a.nav-expander.fixed {
+  position: fixed;
+}
+ 
+.nav-expanded a.nav-expander.fixed {
+    right: 20em;
+}
+
+nav {
+  background: #fff;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -15em;
+  font-size: 15px;
+  top: 0;
+  width: 15em;
+  z-index: 2000;
+ 
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+ 
+}
+.nav-expanded nav {
+  left: 0;
+}
+ 
+body.nav-expanded {
+  margin-left: 0em;
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+ 
+#nav-close {
+    float: right;font-size: 25px;margin-right: 20px;position: relative;top: 20px;color: #999999;
+}
+.main-menu {
+  padding-top: 0px;
+}
+ 
+.main-menu li {
+
+  margin-left: 20px;
+  font-size: 12px;
+  line-height:15px;
+  padding: 20px 12px;
+  font-family:Open Sans;
+}
+ 
+.main-menu li a {
+  color: #6F7D8C;
+  text-decoration: none;
+}
+ 
+.main-menu li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+ 
+ .main-menu li img {
+ 	width: 24px;
+    margin-right: 16px;
+ }
+ 
+.main-menu li .sub-nav {
+  border-bottom: 0px;
+  padding: 4px;
+}
+ 
+.main-menu a .caret {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	vertical-align: top;
+	border-top: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+    margin-top: 8px;
+}
+ 
+.main-menu a:hover .caret {
+	border-top-color: #4f5963;
+}
+ 
+.main-menu li.open > a > .caret {
+	border-top: none;
+	border-bottom: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+ 
+.main-menu li.open > a:hover > .caret {
+	border-bottom-color: #4f5963;
+}
+ 
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  color:#555;
+  content: '\f105';
+}
+ 
+.main-menu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+ 
+}
+ 
+.main-menu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+
+/* My Codings  */
+
+.canvas-menu-header{
+	background-color:#3A434D;
+	padding:0px;
+	height:172px;
+	width:100%;
+	text-align:center;
+	color:#fff;
+	font-family:Open Sans;
+	font-size:13px;	
+	border-bottom: 10px solid #00ADE3;
+}
+
+.canvas-menu-header h4{
+font-size:13px;	
+font-weight:bold;
+}
+
+
+/* -------------END OFF CANVAS----------------- */
+
+
